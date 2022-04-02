@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --color-base: #e5097f;
+}
+@font-face{
+    font-family: 'Pacifico';
+    src: url(./fonts/Pacifico-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+
+}
+.titulo {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+    height: 180px;
+   background-image: url("./assets/fondo.jpg");
+   font-family: Pacifico;
+   background-position: 50% 70%;
+   overflow: hidden;
+}
+.titulo:hover{
+    cursor: pointer;
+}
+.titulo h1{
+    font-size: 45px;
+}
+.subtitulos{
+    color: rgb(230, 27, 162);
+    font-family: Pacifico;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+nav ul, footer ul {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    text-decoration: none;
+    line-height: 10vh;
+    background-color: rgb(27, 27, 27);
+    color: rgb(230, 27, 162);
+}
+nav ul li, footer ul li{
+    list-style-type: none;
+    width: 150px;
+}
+nav ul li:hover, footer ul li:hover{
+    background-color: rgb(230, 27, 162);
+    color: black;
+    cursor: pointer;
+}
+main{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main section h3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+.pasteles{
+    margin-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.pastel{
+    margin: 10px;
+}
+.pastel small{
+    display: flex;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    justify-content: center;
+    width: 100%;
+    background-color: violet;
+}
+.pastel img:hover{
+    filter: blur(2px);
+    cursor: pointer;
+}
+.pastel :hover{
+    cursor: pointer;
+    background-color: black;
+    color: rgb(230, 27, 162);
+}
+.pastel img{
+    height: 150px;
+}
+.pastel figcaption{
+    height: 20px;
+    padding: 5px;
+    margin-top: -5px;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(230, 27, 162);
+    color: black;
+}
+.nuevo-pedido{
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.pedido{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.pedido-btn{
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+   background-color: rgb(44, 190, 44);
+   color: white;
+   border-radius: 50px;
+   border: 1px solid white;
+}
+
+.pedido-btn:hover{
+    cursor: pointer;
+    background-color:rgb(73, 236, 73);
+}
+.horarios{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+}

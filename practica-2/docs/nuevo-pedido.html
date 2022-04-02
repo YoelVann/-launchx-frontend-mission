@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./nuevo-pedido.css">
+    <title>Pasteleria</title>
+</head>
+<body>
+    <div class="titulo" onclick="window.location.href = './index.html'">
+        <h1>Pastelería Chapa Jambo</h1>
+        <h2>Sabor irresistible como un hermoso lomito</h2>
+    </div>
+
+    <nav>
+        <ul>
+            <li onclick="window.location.href = './nuevo-pedido.html'">Nuevo Pedido</li>
+            <li>Contacto</li>
+            <li>item</li>
+            <li onclick="window.location.href = './admin.html'">Administrador</li>
+        </ul>
+    </nav>
+
+   <main>
+       <section>
+           <h3 class="subtitulos">Nuevo pedido</h3>
+           <form action="" class="formulario">
+               <div class="adornos">
+                    <h4 class="titulo-eleccion">Elige tus Adornos</h4>
+                    <label><input type="checkbox" id="adorno1" value="first_checkbox"> Chispas de Chocolate + $100 MXN</label><br> 
+                    <label><input type="checkbox" id="adorno2" value="first_checkbox"> Chispas de Fresa + $100 MXN</label><br> 
+                    <label><input type="checkbox" id="adorno3" value="first_checkbox"> Chispas multisabor + $100 MXN</label><br> 
+                    <label><input type="checkbox" id="adorno4" value="first_checkbox"> Obleas + $100 MXN</label><br> 
+                    <label><input type="checkbox" id="adorno5" value="first_checkbox"> Raspado de chocolate + $100 MXN</label><br> 
+                    <label><input type="checkbox" id="adorno5" value="first_checkbox"> Acabado de chantilli estilizado + $100 MXN</label><br> 
+               </div>
+            
+               <h4 class="titulo-eleccion">Elige tu Sabore</h4>
+               <div class="sabores">
+                   <div class="sabor">
+                        <input type="radio" name="sabor1" id="sabor1">
+                        <label for="sabor1">Fresa</label>
+                   </div>
+                    
+                   <div class="sabor">
+
+                       <input type="radio" name="sabor2" id="sabor2">
+                       <label for="sabor2">Chocolate</label>
+                       
+                    </div>
+                    <div class="sabor">
+                        <input type="radio" name="sabor3" id="sabor3">
+                        <label for="sabor3">Vainilla</label>
+                    </div>
+
+                    <div class="sabor">
+                        <input type="radio" name="sabor4" id="sabor4">
+                        <label for="sabor4">Tres leches</label>
+                    </div>
+
+                    <div class="sabor">
+                        <input type="radio" name="sabor5" id="sabor5">
+                        <label for="sabor5">Galleta</label>
+                    </div>
+               </div>
+
+               <div class="datos">
+                <h4 class="titulo-eleccion">Llena tus datos</h4>
+                   <div class="entrada">
+                       <label for="nombre">Nombre</label><br>
+                       <input type="text" id="nombre" name="nombre"> <br>
+                    </div>
+
+                   <div class="entrada"> 
+                       <label for="apellido">Apellido</label><br>
+                       <input type="text" id="apellido" name="apellido"> <br>   
+                    </div>
+
+                    <div class="entrada"> 
+                        <label for="tel">Teléfono</label><br>
+                        <input type="tel" id="tel" name="tel", maxlength="10"><br>
+                    </div>
+
+                   <div class="entrada">
+                       <label for="correo">Correo</label><br>
+                       <input type="email" id="correo" name="correo"><br>
+                    </div>
+                </div>
+                </form>
+                <div class="comprar-btn">
+                    <button>Comprar</button>
+                </div>
+      
+        </section>
+   </main>
+
+    <footer>
+        <div class="horarios">
+            <p>Mérida, Yucatán, Colonia Bojórquez Calle 100</p>
+            <p>Horario de atención de lunes a viernes de 9:00 a 16Hrs</p>
+        </div>
+
+        <ul>
+            <li>Contacto</li>
+            <li>Dirección</li>
+            <li>footer item</li>
+            <li>footer item</li>
+        </ul>
+       
+    </footer>
+</body>
+</html>

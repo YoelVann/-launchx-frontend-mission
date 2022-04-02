@@ -1,0 +1,494 @@
+/* General */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* Font awesome overwrite */
+
+.bck-yellow{
+    color: gold;
+    background-color: rgba(255, 255, 132, 0.445);
+    line-height: 35px !important;
+}
+
+.bck-blue{
+    color: rgb(68, 0, 255);
+    background-color: rgba(132, 165, 255, 0.445);
+    line-height: 32px !important;
+}
+
+/* triangles */
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-top: 90px solid rgb(241, 241, 241);
+    margin-left: -80px;
+} 
+
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    margin-right: 0px;
+    margin-top: 350px;
+    border-top: 90px solid transparent;
+    border-bottom: 90px solid transparent; 
+    border-right:90px solid rgb(241, 241, 241); 
+  }
+
+/* Navbar */
+
+nav, nav ul:last-child{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between; 
+}
+
+nav ul:last-child{
+    align-items: center;
+    padding-right: 50px;
+}
+nav ul li:hover, .submit-btn{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(68, 0, 255);
+    border-radius: 10px;
+    box-shadow: 14px 19px 33px -13px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 14px 19px 33px -13px rgba(0,0,0,0.71);
+    -moz-box-shadow: 14px 19px 33px -13px rgba(0,0,0,0.71);
+}
+
+.submit-btn{
+    border-radius: 4px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    margin-top: 20px;
+}
+.right-menu li{
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: rgb(168, 163, 163);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul:first-child{
+    font-size: 40px;
+    font-weight: bold;
+    color: blue;
+    padding-left: 100px;
+}
+/* Utilities */
+.title{
+    color: rgb(37, 37, 141);
+    font-size: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.sub-title{
+    color: rgb(90, 78, 250)
+}
+.common-text{
+    color: rgb(150, 149, 149);
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.list-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 450px;
+    color: rgb(90, 78, 250);
+    font-weight: bold;
+    text-align: center;
+}
+
+.list-options:hover{
+    cursor: pointer;
+}
+/* Articles */
+
+article section:first-child{
+    padding-left: 100px;
+}
+
+.main-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* was minibox here */
+
+.yellow-shdw{
+    /* background-color: rgba(255, 255, 132, 0.445); */
+    box-shadow: -1px 57px 20px -2px rgba(255,236,3,0.45);
+    -webkit-box-shadow: -1px 20px 39px -2px rgba(255,236,3,0.45);
+    -moz-box-shadow: -1px 57px 39px -2px rgba(255,236,3,0.45);
+}
+.blue-shdw{
+    /* background-color: rgba(132, 165, 255, 0.445); */
+    box-shadow: -1px 20px 20px -2px rgba(3,13,255,0.45);
+    -webkit-box-shadow: -1px 20px 39px -2px rgba(3,13,255,0.45);
+    -moz-box-shadow: -1px 57px 20px -2px rgba(3,13,255,0.45);
+}
+.schedule-vacc{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule-vacc div{
+    width: 700px;
+    margin-left: 90px;
+}
+
+.schedule-vacc-content{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    box-shadow: 2px 21px 35px 17px rgba(186,182,242,0.75);
+    -webkit-box-shadow: 2px 21px 35px 17px rgba(186,182,242,0.75);
+    -moz-box-shadow: 2px 21px 35px 17px rgba(186,182,242,0.75);
+}
+
+.schedule-vacc-content ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.schedule-vacc-content ul li{
+    color: rgb(150, 149, 149);
+    font-weight: bold;
+}
+.schedule-vacc-content ul li:hover{
+    cursor: pointer;
+}
+.schedule-vacc-content ul li p{
+    color: rgb(90, 78, 250);
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+
+.mini-box{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    line-height: 35px;
+    padding-top: 3px;
+    text-align: center;
+}
+
+.vaccines-img{
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.article-subtitle{
+    font-size: 40px;
+    color: rgb(37, 37, 141);
+    font-weight:700
+}
+
+.why-vaccine{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.vaccine-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.vaccine-card{
+    text-align: left;
+    width: 250px;
+    height: 350px;
+    border: 4px solid rgba(245, 242, 242,.4);
+    border-radius: 10px;
+    padding:10px;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.vaccine-card:hover{
+    cursor: pointer;
+    border: 4px solid white;
+    box-shadow: -2px 52px 38px 8px rgba(58,8,250,0.16);
+    -webkit-box-shadow: -2px 52px 38px 8px rgba(58,8,250,0.16);
+    -moz-box-shadow: -2px 52px 38px 8px rgba(58,8,250,0.16);
+}
+.vaccine-card i{
+    width: 50px;
+    height: 40px;
+    padding: 9px;
+    padding-top: 14px;
+    font-size: 26px;
+}
+
+.vaccine-card p{
+    padding: 10px;
+    text-align: left;
+    font-size: 19px;
+}
+.vaccine-card h4{
+    font-size: 28px;
+    font-weight:normal;
+    color: rgb(37, 37, 141);
+}
+
+.vaccine-reasons{
+    width: 100%;
+    display:flex;
+    justify-content: right;
+    margin-right: 100px;
+}
+
+.recomendations-title{
+    margin-left: -90px;
+}
+.girl-img{
+    margin-top: 100px;
+}
+.vaccine-reasons-container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    margin-top: 90px;
+    margin-right: 100px;
+}
+.vaccine-reasons-container div{
+    width: 100%;
+}
+
+.recomendations-list{
+    align-items: center;
+}
+.recomendations-list li{
+    height: 30px;
+    width: 500px;
+    text-align: left;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    border: 3px solid rgba(245, 242, 242,.5);
+    border-radius: 10px;
+}
+
+.recomendations-list li:hover{
+    cursor: pointer;
+}
+.recomendations-list li i{
+    margin-right: 40px;
+}
+
+.dropdown-main-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dropdown-main-text p{
+    color: rgb(90, 78, 250);
+    font-weight: 600;
+    width: 300px;
+}
+
+.mini-box-dropdow{
+    display: flex !important;
+    align-items: center;
+    justify-content: center ;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px; 
+    margin-top: 10px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content p{
+    width: 90%;
+    color: rgb(150, 149, 149);
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .mini-box-dropdow{
+    transform: rotate(180deg);
+}
+.recomendations-list li:hover{
+    height: 120px;
+}
+
+/* Contact Section tyles */
+.boy-img{
+    margin-top: -120px;
+}
+.contact-title{
+    /* width: 100%; */
+    margin-left: 90px;
+}
+.contact-title-content{
+    width: 40%;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    margin-left: 90px;
+
+}
+.contact-cards{
+    width: 800px;
+    display: block; 
+    
+}
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgba(245, 242, 242,.5);
+    border-radius: 8px;
+    width: 200px;
+    height: auto;
+    padding:40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right:40px;
+    float: left;
+}
+.contact-card div{
+    float: left;
+}
+.contact-card button{
+    height: 50px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+
+}
+.contact-card-info {
+    display: flex;
+    flex-direction: row;
+}
+.contact-card-info i {
+    width: 70px;
+    height: 50px;
+    padding-top: 15px;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.contact-card-info div p{
+    margin-bottom: 5px;
+    width: 120px;
+    font-size: 25px;
+    color: rgb(90, 78, 250);
+}
+.contact-card-info div small{ 
+    color: rgb(150, 149, 149);
+}
+.contact-card-info div{
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-card:hover{
+    cursor: pointer;
+    border: 3px solid white;
+    box-shadow: -2px 52px 38px 8px rgba(58,8,250,0.16);
+    -webkit-box-shadow: -2px 52px 38px 8px rgba(58,8,250,0.16);
+    -moz-box-shadow: -2px 52px 38px 8px rgba(58,8,250,0.16);
+}
+
+.contact-card button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(68, 0, 255);
+    border-radius: 10px;
+    box-shadow: 14px 19px 33px -13px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 14px 19px 33px -13px rgba(0,0,0,0.71);
+    -moz-box-shadow: 14px 19px 33px -13px rgba(0,0,0,0.71);
+}
+footer{
+    margin-top: 100px;
+    height: 300px;
+    padding-left: 90px;
+    padding-right: 90px;
+    background-color: rgba(132, 165, 255, 0.18);
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.vaccination-footer{
+    width: 300px;
+    line-height: 30px;
+}
+.footer-title{
+    font-size: 25px;
+    color: rgb(90, 78, 250);
+}
+.footer-text{
+    color: rgb(150, 149, 149);
+    font-size: 18px;
+}
+
+.about-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.about-item{
+    width: 200px;
+}
+.about-item li:hover, .terms p:hover{
+    cursor: pointer;
+}
+.about-item li p{
+    color: rgb(121, 118, 118);
+}
+.about-item-title{
+    color: rgb(50, 36, 248);
+}
+.all-rights{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-right: 90px;
+}
+.terms{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+}

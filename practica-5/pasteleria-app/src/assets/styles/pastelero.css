@@ -1,0 +1,90 @@
+section{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.subtitulo-insumo{
+    font-family: Pacifico;
+    color: black;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid purple;
+}
+
+thead th:nth-child(1) {
+    width: 10%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 25%;
+  }
+  
+  /* thead th:nth-child(4) {
+    width: 35%;
+  } */
+  
+  th{
+    padding: 20px;
+  }
+  td{
+      padding: 5px;
+  }
+  th {
+    letter-spacing: 2px;
+  }
+  
+  td {
+    letter-spacing: 1px;
+  }
+  
+  tbody td {
+    text-align: center;
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+  thead, tfoot {
+    color: white;
+  }
+  
+  thead th, tfoot th, tfoot td {
+    background-color: blueviolet;
+    border: 1px solid purple;
+  }
+  tbody td{
+    border-right: 1px solid purple;
+  }
+  tbody tr:nth-child(odd) {
+    background-color:white;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #c7a9f8;
+  }
+  
+.proveedor-btn, .proveedor-cancelar{
+    background-color: rgb(92, 223, 92);
+    color: white;
+    border-radius: 40px;
+    height: 30px;
+    border: 1px solid rgb(92, 223, 92);
+}
+.proveedor-cancelar{
+    background-color: orangered;
+    border: 1px solid orangered;
+}
+.proveedor-btn:hover, .proveedor-cancelar:hover{
+    cursor: pointer;
+}

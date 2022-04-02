@@ -1,0 +1,53 @@
+
+.titulo-eleccion{
+    color: #e5097f;
+    margin-bottom: 10px;
+}
+
+.formulario{
+    background-color: #f383bf;
+    color: white;
+    margin: 50px;
+    padding: 40px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.sabores, .adornos, .datos{
+    margin-bottom: 20px;
+}
+.sabores{
+    display: flex;
+    justify-content: space-between;
+}
+.datos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.datos input{
+    width: 60%;
+    height: 30px;
+    padding-left: 20px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    border: 1px solid white;    
+}
+
+.comprar-btn {
+    display: flex;
+    justify-content: center;
+}
+.comprar-btn button:hover{
+    cursor: pointer;
+}
+
+.comprar-btn button{
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 20px;
+    background-color: #428cdf;
+    color: white;
+    border: 1px solid white;
+
+}
